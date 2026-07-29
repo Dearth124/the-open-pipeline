@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <p class="post-meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    {% if page.author %} &nbsp;&middot;&nbsp; {{ page.author }}{% endif %}
+  </p>
+
+  {% if page.pdf %}
+  <p class="pdf-link">
+    <a href="{{ page.pdf | relative_url }}">Download the full paper (PDF)</a>
+  </p>
+  {% endif %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <p class="back-link"><a href="{{ '/' | relative_url }}">&larr; Back to all posts</a></p>
+</article>

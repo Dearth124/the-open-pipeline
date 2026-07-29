@@ -1,0 +1,23 @@
+title: The Open Pipeline
+description: Research notes and papers.
+author: Sanav Kumar
+baseurl: ""
+url: ""
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
