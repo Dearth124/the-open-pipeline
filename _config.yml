@@ -1,8 +1,8 @@
 title: The Open Pipeline
 description: Research notes and papers.
 author: Sanav Kumar
-baseurl: ""
-url: ""
+baseurl: "/the-open-pipeline"
+url: "https://dearth124.github.io"
 
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
